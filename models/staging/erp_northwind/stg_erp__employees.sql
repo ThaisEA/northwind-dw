@@ -8,17 +8,17 @@ with
             --,title						
             --,title_of_courtesy						
             , cast(birth_date as date) as data_nascimento
-            , cast(hire_date as date) as data_caontratacao
+            , cast(hire_date as date) as data_contratacao
             , cast(address as string) as endereco
             , cast(city as string) as cidade	
-            , cast(region as string	) as regiao		
+            , cast(region as string) as regiao		
             , cast(postal_code as string) as cep						
-            , cast(country as string) as pais			
+            , cast(country as string) as pais		
             --,home_phone						
             --,extension						
             --,photo		
-            , cast( notes as string) as	notas				
-            , cast( reports_to as string) as gerent_id 				
+            , cast(notes as string) as notas				
+            , cast(reports_to as int) as gerente_id 				
             --,photo_path		
         from {{ source('erp', 'employees') }}
     )
