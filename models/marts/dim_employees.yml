@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: dim_employees
+    description: Dimensão de funcionário da Northwind.
+    columns:
+      - name: funcionario_id
+        description: Chave primária da tabela funcionários.
+        tests:
+          - unique
+          - not_null
+              
+      - name: gerente_id
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: sobrenome
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: nome
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: nome_completo
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: gerente_nome_completo
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: data_nascimento
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: data_contratacao
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: endereco
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: cidade	
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: regiao		
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: cep						
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: pais			
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      - name: notas	
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
