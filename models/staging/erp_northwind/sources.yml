@@ -11,5 +11,29 @@ sources:
             tests:
               - unique
               - not_null
-                  
- 
+      - name: products
+        description: Tabela com os produtos comercializados pela Northwind.
+        columns:
+          - name: product_id
+            tests:
+              - unique
+              - not_null
+
+      - name: categories
+        description: Tabela com as categorias dos produtos comercializados pela Northwind.
+        columns:
+          - name: category_id
+            tests:
+              - unique
+              - not_null
+
+      - name: suppliers
+        description: Tabela de fornecedores dos produtos comercializados pela Northwind.
+        columns:
+          - name: supplier_id
+            tests:
+              - unique
+              - not_null
+      
+
+      
