@@ -11,5 +11,38 @@ sources:
             tests:
               - unique
               - not_null
-                  
- 
+      - name: products
+        description: Tabela com os produtos comercializados pela Northwind.
+        columns:
+          - name: product_id
+            tests:
+              - unique
+              - not_null
+
+      - name: categories
+        description: Tabela com as categorias dos produtos comercializados pela Northwind.
+        columns:
+          - name: category_id
+            tests:
+              - unique
+              - not_null
+
+      - name: suppliers
+        description: Tabela de fornecedores dos produtos comercializados pela Northwind.
+        columns:
+          - name: supplier_id
+            tests:
+              - unique
+              - not_null
+      
+      - name: orders
+        description: Uma linha por pedido. Inclui pedidos cancelados e deletados.
+        columns:
+          - name: order_id
+            description: Chave primária da tabela ordens.
+            tests:
+              - unique
+              - not_null
+
+      - name: order_details
+        description: Detalhe de item linha para cada pedido de tabela ordens. Uma coluna sozinha aqui não define que a tab ela é unica de fato. Um teste possível seria verificar se a combinação das colunas "order_id" + "product_id" é unica de fato. Para isso teria que usar um pacote do dbt "DBT Expectation" ou "DBT Utils" 
