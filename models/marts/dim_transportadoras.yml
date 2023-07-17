@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_transportadoras
+    description: Transportadoras da Northwind.
+    columns:
+      - name: id_transp
+        description: Chave primária da tabela transportadoras.
+        tests:
+          - unique
+          - not_null

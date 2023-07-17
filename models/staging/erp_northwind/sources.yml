@@ -55,3 +55,12 @@ sources:
             tests:
               - unique
               - not_null
+
+      - name: shippers
+        description: Tabela de transportadoras da Northwind.
+        columns:
+          - name: shipper_id
+            description: Chave primária da tabela transportadoras.
+            tests:
+              - unique
+              - not_null
